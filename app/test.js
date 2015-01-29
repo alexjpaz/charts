@@ -13,4 +13,5 @@ server.listen(8080, function(request, response) {
 
   response.statusCode = 200;
   response.write("created") //TODO write out string from render
+  response.close();
 });
