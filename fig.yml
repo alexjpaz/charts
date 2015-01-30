@@ -1,2 +1,7 @@
 graphs:
   build: .
+  ports:
+    - "127.0.0.1:8080:8080"
+  entrypoint:
+    - /opt/phantomjs/bin/phantomjs
+    - /opt/app/test.js

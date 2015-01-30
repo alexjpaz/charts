@@ -17,5 +17,3 @@ RUN mkdir /opt/phantomjs
 RUN tar xf /tmp/phantomjs.tar.bz2 -C /opt/phantomjs --strip-components=1
 
 ADD app /opt/app
-
-ENTRYPOINT ['/opt/phantomjs/bin/phantomjs','/opt/app/test.js']
